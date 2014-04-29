@@ -16,6 +16,10 @@
 		7855E0DF190DBF8000745FCA /* libGADRSTabSeparatedFile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7855E0C7190DBF8000745FCA /* libGADRSTabSeparatedFile.a */; };
 		7855E0E5190DBF8000745FCA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0E3190DBF8000745FCA /* InfoPlist.strings */; };
 		7855E0E7190DBF8000745FCA /* GADRSTabSeparatedFileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7855E0E6190DBF8000745FCA /* GADRSTabSeparatedFileTests.m */; };
+		7855E0F4190DC02200745FCA /* ValidTabSeparatedTestFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0F3190DC02200745FCA /* ValidTabSeparatedTestFile.txt */; };
+		7855E0F6190DC10800745FCA /* ValidTabSeparatedTestFileWithNoNewLineAtEOF.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0F5190DC10800745FCA /* ValidTabSeparatedTestFileWithNoNewLineAtEOF.txt */; };
+		7855E0F8190DC19C00745FCA /* InvalidTabSeparatedTestFileWithWrongNoOfColumns.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0F7190DC19C00745FCA /* InvalidTabSeparatedTestFileWithWrongNoOfColumns.txt */; };
+		7855E0FB190DFBC900745FCA /* ValidTabSeparatedTestFileSmall.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0FA190DFBC900745FCA /* ValidTabSeparatedTestFileSmall.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		7855E0E2190DBF8000745FCA /* GADRSTabSeparatedFileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GADRSTabSeparatedFileTests-Info.plist"; sourceTree = "<group>"; };
 		7855E0E4190DBF8000745FCA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7855E0E6190DBF8000745FCA /* GADRSTabSeparatedFileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADRSTabSeparatedFileTests.m; sourceTree = "<group>"; };
+		7855E0F3190DC02200745FCA /* ValidTabSeparatedTestFile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ValidTabSeparatedTestFile.txt; sourceTree = "<group>"; usesTabs = 1; };
+		7855E0F5190DC10800745FCA /* ValidTabSeparatedTestFileWithNoNewLineAtEOF.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ValidTabSeparatedTestFileWithNoNewLineAtEOF.txt; sourceTree = "<group>"; usesTabs = 1; };
+		7855E0F7190DC19C00745FCA /* InvalidTabSeparatedTestFileWithWrongNoOfColumns.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InvalidTabSeparatedTestFileWithWrongNoOfColumns.txt; sourceTree = "<group>"; usesTabs = 1; };
+		7855E0FA190DFBC900745FCA /* ValidTabSeparatedTestFileSmall.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ValidTabSeparatedTestFileSmall.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 		7855E0E0190DBF8000745FCA /* GADRSTabSeparatedFileTests */ = {
 			isa = PBXGroup;
 			children = (
+				7855E0F2190DBFD200745FCA /* Resources */,
 				7855E0E6190DBF8000745FCA /* GADRSTabSeparatedFileTests.m */,
 				7855E0E1190DBF8000745FCA /* Supporting Files */,
 			);
@@ -141,6 +150,17 @@
 				7855E0E3190DBF8000745FCA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7855E0F2190DBFD200745FCA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7855E0F3190DC02200745FCA /* ValidTabSeparatedTestFile.txt */,
+				7855E0FA190DFBC900745FCA /* ValidTabSeparatedTestFileSmall.txt */,
+				7855E0F5190DC10800745FCA /* ValidTabSeparatedTestFileWithNoNewLineAtEOF.txt */,
+				7855E0F7190DC19C00745FCA /* InvalidTabSeparatedTestFileWithWrongNoOfColumns.txt */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +234,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7855E0E5190DBF8000745FCA /* InfoPlist.strings in Resources */,
+				7855E0FB190DFBC900745FCA /* ValidTabSeparatedTestFileSmall.txt in Resources */,
+				7855E0F4190DC02200745FCA /* ValidTabSeparatedTestFile.txt in Resources */,
+				7855E0F8190DC19C00745FCA /* InvalidTabSeparatedTestFileWithWrongNoOfColumns.txt in Resources */,
+				7855E0F6190DC10800745FCA /* ValidTabSeparatedTestFileWithNoNewLineAtEOF.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +429,7 @@
 				7855E0EC190DBF8000745FCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7855E0ED190DBF8000745FCA /* Build configuration list for PBXNativeTarget "GADRSTabSeparatedFileTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +438,7 @@
 				7855E0EF190DBF8000745FCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
